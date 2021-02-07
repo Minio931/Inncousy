@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocuousy</title>
+    <!--Jquerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <!--scrollMagić-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
+    <!--my links-->
+    <script src="../scripts/jsonFetch.js"></script>
+    <script src="../scripts/scrollMagic.js"></script>
+    <link rel="stylesheet" href="../styles/styles.css">
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
+<body>
+ <div id="Home" class="title-page containers" >
+    <!--<div id="google_translate_element"></div>-->
+    <nav class="navbar bg-dark">
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Decks">Decks</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+          </ul>
+    </nav>
+    <h2 class="title">Innocuousy</h2>
+  <div class="arrow_position"><a href="#gameMenu"><span class="join">join game</span><br /><span class="down_arrow"></a></span></div>
+  </div><br>
+  <div id="gameMenu" class="containers" >
+    <div class="grid">
+        <div class="row">
+          <div class="col-6 col-sm-3">Create Room</div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-sm-3">Create Deck</div>
+        </div>
+      </div>
+          <table class="roomsContainer">
+            <tr class="rooms">
+              <th>#</th>
+              <th>Rooms(20667) </th>
+              <th>Size</th>
+            </tr>
+            <tr class="rooms">
+              <td class="lp">1</td>
+              <td class="namae"> Room's name 1</td>
+              <td><span>5/5</span> <button class="joinButton">join</button></td>
+            </tr>
+          </table>
+      
+  </div>
+
+  <div id="Decks" >
+    <div id='containerKurw'>
+      
+    </div>
+  </div>
+  <div id="About" >
+    <p id="about">
+      Innocuousy is clone of popular game "Cards Against Humanity". Which is avaible at <a href="https://www.cardsagainsthumanity.com">cardsagainsthumanity.com</a><br>
+      Cards Against Humanity® is distributed under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons BY-NC-SA 4.0 license.</a> <br>
+      If you want to do your own game in your style I used json file with decks from there: <a href="https://crhallberg.com/cah/">crhallberg.com</a> also here is my source code: <a href="">GitHub.com</a> <br>
+      Site was created by: <br>
+      -Graphic design Marlo <br>
+      -Music <a href="https://www.youtube.com/channel/UCiVQmgVQoUe0az93-LaSs6g">Karix</a><br>
+      -Development Miniosky <br>
+
+    </p>
+  </div>
+</body>
+</html>

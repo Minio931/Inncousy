@@ -1,0 +1,35 @@
+let i = 0;
+function buildTable(cards){
+    var table = document.getElementsByClassName('deckTable');
+    for(var i = 0; i < Object.keys(cards).length; i++){
+            let txt = document.createTextNode(cards[i].name);
+            var tr = document.createElement('tr');
+            var td = document.createElement('td');
+            var td2 = document.createElement('td');
+            var td3 = document.createElement('td');
+            var listaKurwa = document.createElement('ol');
+            var listaKurwa2 = document.createElement('ol');
+            td2.appendChild(listaKurwa);
+            td3.appendChild(listaKurwa2);
+                for(var j = 0; j < cards[i].white.length; j++){
+                    var white = document.createTextNode(cards[i].white[j].text);
+                    var listNodeKurwa = document.createElement('li');
+                    listNodeKurwa.appendChild(white);
+                    td2.appendChild(listNodeKurwa);
+                }
+                for(var z = 0; z < cards[i].black.length; z++){
+                    var black = document.createTextNode(cards[i].black[z].text);
+                    var listNodeKurwa2 = document.createElement('li');
+                    listNodeKurwa2.appendChild(black);
+                    td3.appendChild(listNodeKurwa2);
+                }
+            
+            td.appendChild(txt);
+            tr.appendChild(td);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            table[0].appendChild(tr);
+    } 
+    
+    
+}
