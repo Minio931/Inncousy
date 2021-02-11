@@ -14,8 +14,10 @@ $(document).on('click', 'a', function(e){
 //Animations
 var controller = new ScrollMagic.Controller();
 
-var scene = new ScrollMagic.Scene({
-    triggerElement: '#Decks'
-})
-.setClassToggle('#Decks', 'show')
+var scene = new ScrollMagic.Scene({triggerElement: "#gameMenu"})
+.setClassToggle("#gameMenu", "hashAnimation") // add class toggle
+.addTo(controller);
+
+var scene2 = new ScrollMagic.Scene({triggerElement: "#Decks"})
+.setClassToggle("#Decks", "hashAnimation2") // add class toggle
 .addTo(controller);
