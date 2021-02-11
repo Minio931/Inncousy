@@ -11,16 +11,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
    
     <!--scrollMagić-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="../scripts/ScrollMagic.min.js"></script>
+    <script src="../scripts/debug.addIndicators.min.js"></script>
     
     <!--FONTS-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
     
-    <!--my links-->
-    <script src="../scripts/jsonFetch.js"></script>
-    <script src="../scripts/scrollMagic.js"></script>
+   
     <link rel="stylesheet" href="../styles/styles.css">
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </head>
@@ -43,13 +41,13 @@
     <h2 class="title">Innocuousy</h2>
   <div class="arrow_position"><a href="#gameMenu"><span class="join">join game</span><br /><span class="down_arrow"></a></span></div>
   </div><br>
-  <div id="gameMenu" class="containers" >
+  <div id="gameMenu" >
     <div class="grid">
         <div class="row">
-          <div class="col-6 col-sm-3">Create Room</div>
+          <div class="col-6 col-sm-3"> <a href="../roomCreation.html">Create Room</a></div>
         </div>
         <div class="row">
-          <div class="col-6 col-sm-3">Create Deck</div>
+          <div class="col-6 col-sm-3"> Create Deck</div>
         </div>
       </div>
           <table class="roomsContainer">
@@ -84,5 +82,15 @@
 
     </p>
   </div>
+  <!--scrollMagić-->
+  <script src="../scripts/ScrollMagic.min.js"></script>
+  <script src="../scripts/debug.addIndicators.min.js"></script>
+
+   <!--my links-->
+   <script src="../scripts/jsonFetch.js"></script>
+   <script src="../scripts/scrollMagic.js"></script>
+   <script src="./scripts/client.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/3.1.1/socket.io.js"></script>
+  
 </body>
 </html>

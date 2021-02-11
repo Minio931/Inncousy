@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innocuousy - Game Room</title>
+    <!--Jquerry-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   
+    <!--scrollMagić-->
+    <script src="../scripts/ScrollMagic.min.js"></script>
+    <script src="../scripts/debug.addIndicators.min.js"></script>
+    
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <!--My Links-->
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles2.css">
+    <script src="https://cdn.socket.io/3.1.1/socket.io.min.js"></script>
+
+    
+</head>
+<body>
+    
+   <nav class="navbar navbar-dark bg-dark">
+        <ul class="nav justify-content-start">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+          </li>
+        </ul>
+        
+        <div id="google_translate_element"></div>
+      </nav>
+      
+      <div class="content">
+        <div id="settings">
+
+        </div>
+        <div id="chat-control">
+            <ul id="events">
+              <li>Welcome on board</li>
+            </ul>
+            <div class="chat-wrapper">
+              <form action="" id="chat-form">
+                <input type="text" id="chat">
+                <button id="say">Send</button>
+              </form>
+            </div>
+        </div>
+        <div id="leaderboard">
+
+        </div>
+      </div>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        }
+        </script>
+        <script src="./scripts/client.js"></script>
+        
+        
+</body>
+</html>
